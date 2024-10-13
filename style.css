@@ -14,11 +14,11 @@ body{
     color: #fff;
     margin:100px auto 0;
     border-radius:20px;
-    padding:40px 35px;
+    padding:20px 35px;
     text-align:center;
 }
 .search{
-    width:30px;
+    width:100%;
     display:flex;
     align-items:center;
     justify-content: space-between;
@@ -28,22 +28,70 @@ body{
     outline:0;
     background: #ebfffc;
     color:#555;
-    padding:10px 25px;
-    height:60px;
+    padding:20px 25px;
+    height:40px;
     border-radius:30px;
     flex:1;
-    margin-right:16px;
+    margin-right:20px;
+    margin-left: 20px;
     font-size:18px;
+    width: 100%;
 }
 .search button{
     border:0;
     outline:0;
-    background: #ebfffc;
+    background: #ebfffc00;
     border-radius:50%;
-    width:60px;
-    height:60px;
+    width:40px;
+    height:40px;
     cursor:pointer;
 }
 .search button img{
-    width:60px;
+    width:100%;
+    max-width: 30px;
+}
+.wheather-image{
+   position:relative; /*order you to allow to kept text over the image*/
+   display:inline-block;
+}
+.wheather-image img{
+   opacity: 0.5;   /*any change will affect all three images*/
+    padding-top: 5px;
+    height:400px;
+    width: 100%;
+   max-width: 400px;
+    border-radius: 20px;
+}
+.wheather-text{
+  position:absolute;/*kept the text over the image*/
+    width:100%;
+    top:20%;
+    text-align: center;
+}
+.wheather-text h1{
+     font-size: 3em;
+     color: #f7f3f3;
+}
+.wheather-text p{
+    font-size: 2em;
+    margin-top: 10px;
+}
+.details {
+    position: absolute;
+    display: flex;
+    bottom:10px;
+    left:10%;
+    justify-content: center; 
+    gap: 150px; 
+  }
+  
+  .col {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+  }
+.col img{
+    opacity:1;
+    width: 50px;
+    height: 50px;
 }
